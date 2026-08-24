@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "tailor_shop/wsgi.py": {
+      "maxDuration": 30
+    }
+  }
+}

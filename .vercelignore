@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+bill_data.sqlite3
+staticfiles/
+.git/
+.env
+README.md
+build.sh
+render.yaml
+Procfile
