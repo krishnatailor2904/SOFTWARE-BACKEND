@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.utils import timezone 
 
 
 class Bill(models.Model):
@@ -14,6 +15,8 @@ class Bill(models.Model):
     bill_no = models.CharField(max_length=50)
     name = models.CharField(max_length=150)
     phone = models.CharField(max_length=20, blank=True, default='')
+    bill_date = models.DateField(default=timezone.localdate)
+    delivery_date = models.DateField(null=True, blank=True)
     cloth_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     stitching_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     note = models.TextField(blank=True, default='')

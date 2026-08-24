@@ -24,6 +24,7 @@ class BillSerializer(serializers.ModelSerializer):
         model = Bill
         fields = [
             'id', 'bill_no', 'name', 'phone',
+            'bill_date', 'delivery_date',
             'cloth_price', 'stitching_price', 'total',
             'shirt_ready', 'pant_ready',
             'has_measurement',
