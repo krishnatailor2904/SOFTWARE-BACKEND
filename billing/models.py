@@ -58,9 +58,9 @@ class Measurement(models.Model):
     # ---- PANT measurements ----
     pant_length = models.CharField(max_length=20, blank=True, default='')
     pant_waist = models.CharField(max_length=20, blank=True, default='')
-    pant_hip = models.CharField(max_length=20, blank=True, default='')
-    pant_bottom = models.CharField(max_length=20, blank=True, default='')
     pant_thigh = models.CharField(max_length=20, blank=True, default='')
+    pant_bottom = models.CharField(max_length=20, blank=True, default='')
+    pant_hip = models.CharField(max_length=20, blank=True, default='')
     pant_seat_langot = models.CharField(max_length=20, blank=True, default='')
 
     notes = models.TextField(blank=True, default='')

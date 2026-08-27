@@ -9,8 +9,8 @@ class MeasurementSerializer(serializers.ModelSerializer):
             'id', 'bill',
             'shirt_length', 'shirt_chest', 'shirt_stomach',
             'shirt_sleeve', 'shirt_shoulder', 'shirt_collar',
-            'pant_length', 'pant_waist', 'pant_hip',
-            'pant_bottom', 'pant_thigh', 'pant_seat_langot',
+            'pant_length', 'pant_waist', 'pant_thigh',
+            'pant_bottom', 'pant_hip', 'pant_seat_langot',
             'notes', 'updated_at',
         ]
         read_only_fields = ['id', 'bill', 'updated_at']
